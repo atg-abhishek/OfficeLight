@@ -1,6 +1,5 @@
-# Python Starter Application
-
-Bluemix provides a python starter application as a template so that you can add your code and push the changes back to the Bluemix environment.
+# HOW DO DEPLOY THIS LOCALLY
+- `python server.py`
 
 
 ## Files
