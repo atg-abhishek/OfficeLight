@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Python Starter Application</title>
+	<title>OfficeLight login</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="stylesheets/style.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 </head>
 <style>
 body {
-    background-image: url("");
+		background-repeat: none;
+		background-color: black;
+    background-image: url("wires.jpg");
+    background-size: 100%;
+    opacity: 0.8;
+/*    filter:alpha(opacity=80);*/
+}
+.main{
+	
 }
 </style>
-<body background="wires.jpg">
-	<h1>Username</h1><input type="text"><br>
-	<h1>Password</h1><input type="password">
+<body>
+<div class="main">
+	<div style="margin: 0 auto; margin-top:5%; text-align: left;width: 230px; background-color:black; border-radius:5%">
+		<div style="text-align:center; padding-bottom:15px; ">
+			<p style="font-size:1.25em; ">Username</p>
+			<input type="text" placeholder="JDoe">
+			<p style="font-size:1.25em; ">Password</p>
+			<input type="password" placeholder="password"><br>
+			<form action="home.html" style="padding-top:10px">
+    			<input type="submit" value="Submit">
+			</form>
+			</div>
+	</div>
 	<!--<table>
 		<tr>
 			<td style='width: 30%;'><img class = 'newappIcon' src='images/newapp-icon.png'>
@@ -25,5 +44,6 @@ body {
 			</td>
 		</tr>
 	</table>-->
+	</div>
 </body>
 </html>
