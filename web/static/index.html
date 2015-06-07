@@ -8,17 +8,29 @@
 </head>
 <style>
 body {
+		background-repeat: none;
+		background-color: black;
     background-image: url("wires.jpg");
     background-size: 100%;
+    opacity: 0.8;
+/*    filter:alpha(opacity=80);*/
+}
+.main{
+	
 }
 </style>
-<body >
-	<div style="margin: 0 auto;text-align: left;width: 230px;">
-		<h1>Username</h1><input type="text"><br>
-		<h1>Password</h1><input type="password"><br>
-		<form action="home.html">
-    		<input type="submit" value="Submit">
-		</form>
+<body>
+<div class="main">
+	<div style="margin: 0 auto; margin-top:5%; text-align: left;width: 230px; background-color:black; border-radius:5%">
+		<div style="text-align:center; padding-bottom:15px; ">
+			<p style="font-size:1.25em; ">Username</p>
+			<input type="text" placeholder="JDoe">
+			<p style="font-size:1.25em; ">Password</p>
+			<input type="password" placeholder="password"><br>
+			<form action="home.html" style="padding-top:10px">
+    			<input type="submit" value="Submit">
+			</form>
+			</div>
 	</div>
 	<!--<table>
 		<tr>
@@ -32,5 +44,6 @@ body {
 			</td>
 		</tr>
 	</table>-->
+	</div>
 </body>
 </html>
