@@ -40,6 +40,8 @@ if __name__ == "__main__":
     j=0
     result = []
     result2 = []
+    feTS = []
+    feValues = []
     measure_unit = "Amplitude"
     loc_esi_id = "Muse-0CCD"
     direction = "P"
@@ -110,6 +112,8 @@ if __name__ == "__main__":
 #                pprint.pprint(sub_result)                
                 result.append(sub_result)
                 result2.append([str(cur_time_init), avg_value])
+                feTS.append(str(cur_time_init))
+                feValues.append(avg_value)
 #            print ('nsamples '+str(n_samples))
             #pprint.pprint(time_vec)           
 #            plt.ion()    
@@ -127,7 +131,7 @@ if __name__ == "__main__":
             '''
             
         import csv
-        with open('trainRelax.csv', 'w') as f:
+        with open('expA1.csv', 'w') as f:
             writer = csv.writer(f)
             for row in result2:
                 writer.writerow(row)
